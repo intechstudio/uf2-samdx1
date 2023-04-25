@@ -101,6 +101,11 @@ static void check_start_application(void) {
 
     /* START: Button Activated Bootloader as proposed by "stevenj" */
 
+
+    #define PINIP(pin) (((PORT->Group[(pin) / 32].IN.reg) >> ((pin) % 32)) & 0x1)
+    #define PINCFG(pin) (PORT->Group[(pin) / 32].PINCFG[(pin) % 32].reg)
+
+
     // Check if there is an IO which will hold us inside the bootloader.
     #if defined(HOLD_PIN) && defined(HOLD_STATE)
         PORT_PINCFG_Type pincfg = {0};
@@ -108,7 +113,7 @@ static void check_start_application(void) {
         pincfg.bit.INEN   = true;
         pincfg.bit.DRVSTR = true;
 
-    PINOP(HOLD_PIN, DIRCLR);        // Pin is an input
+        PINOP(HOLD_PIN, DIRCLR);        // Pin is an input
 
     #if defined(HOLD_PIN_PULLUP)
         pincfg.bit.PULLEN = true;
