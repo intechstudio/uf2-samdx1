@@ -25,7 +25,7 @@ jobs:
       - name: Test ARM GCC
         run: |
           arm-none-eabi-gcc -v
-          make
+          make BOARD=intech_grid
           
       - name: Set Date
         run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
