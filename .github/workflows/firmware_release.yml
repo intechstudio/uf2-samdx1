@@ -20,7 +20,7 @@ jobs:
       - name: Install GNU Arm Embedded Toolchain (arm-none-eabi-gcc)
         uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
-          release: '6-2017-q2' # <-- The compiler release to use
+          release: 'latest' # <-- The compiler release to use
 
       - name: Test ARM GCC
         run: |
