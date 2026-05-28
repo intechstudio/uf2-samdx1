@@ -18,7 +18,7 @@
 #define BOARD_RGBLED_DATA_PIN             PIN_PB03
 
 #define BOOT_USART_MODULE                 SERCOM3
-#define BOOT_USART_MASK                   APBAMASK
+#define BOOT_USART_MASK                   APBBMASK
 #define BOOT_USART_BUS_CLOCK_INDEX        MCLK_APBBMASK_SERCOM3
 #define BOOT_USART_PAD_SETTINGS           UART_RX_PAD1_TX_PAD0
 #define BOOT_USART_PAD3                   PINMUX_UNUSED

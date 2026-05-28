@@ -6,8 +6,12 @@
 #define VENDOR_NAME "Benjamin Shockley"
 #define PRODUCT_NAME "Mini SAM M0"
 #define VOLUME_LABEL "MINISAMBOOT"
-#define INDEX_URL "httpw://www.minifigboards.com"
+#define INDEX_URL "https://minifigboards.com"
 #define BOARD_ID "SAMD21G18A-MiniSAMM0-v0"
+
+// URL does not fit, even without INDEX.HTM
+#define USE_URL_IN_INFO 0
+#define USE_INDEX_HTM 0
 
 #define USB_VID 0x1209
 #define USB_PID 0x7102
