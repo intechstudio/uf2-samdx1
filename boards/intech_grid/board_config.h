@@ -2,7 +2,7 @@
 #define BOARD_CONFIG_H
 
 #define VENDOR_NAME "Intech Studio"
-#define PRODUCT_NAME "Bootloader 2026-5"
+#define PRODUCT_NAME "Bootloader 2026-10"
 #define VOLUME_LABEL "GRID26"
 
 #define INDEX_URL "https://github.com/intechstudio/grid-fw/"
